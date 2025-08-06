@@ -1,0 +1,23 @@
+syntax = " proto3 ";
+2 option go_package =" github / joseguilherme-fs / microservices - proto / golang / order ";
+3
+4 message CreateOrderRequest {
+5 int32 costumer_id = 1;
+6 repeated OrderItem order_items = 2;
+7 float total_price = 3;
+8 }
+9
+10 message OrderItem {
+11 string product_code = 1;
+12 float unit_price = 2;
+13 int32 quantity = 3;
+14 }
+15
+16 message CreateOrderResponse {
+17 int32 order_id = 1;
+18 }
+19
+20 service Order {
+21 rpc Create ( CreateOrderRequest )
+22 returns ( CreateOrderResponse ) {}
+23 }
