@@ -7,7 +7,7 @@ RELEASE_VERSION=v1.2.3
 
 go install google.golang.org/protobuf/cmd/protoc-gen-go@latest 
 export PATH="$PATH:$(go env GOPATH)/bin"
-source ~/.zshrc
+# source ~/.zshrc
 
 echo "Generating Go source code"
 mkdir -p golang
