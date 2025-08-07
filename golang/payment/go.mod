@@ -1,4 +1,4 @@
-module github.com/joseguilherme-fs/microservices-proto/golang/order
+module github.com/joseguilherme-fs/microservices-proto/golang/payment
 
 go 1.24.4
 
